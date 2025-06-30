@@ -15,7 +15,6 @@ jobs:
     uses: Vronst/testing_workflow/.github/workflows/testing_workflow.yml@87da51077258702f1ee5771ec0a8e3d0b1056ed2
     with:
       pytest_flags: '-m regression'
-      python-version: '3.13'
 
   release:
     needs: tests
