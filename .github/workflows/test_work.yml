@@ -13,8 +13,6 @@ permissions:
 jobs:
   tests:
     uses: Vronst/testing_workflow/.github/workflows/testing_workflow.yml@189d898c84c48b322b434f652eeba3597b0df2b2
-    with:
-      pytest_flags: '-m regression'
 
   release:
     needs: tests
